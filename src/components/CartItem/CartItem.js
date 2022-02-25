@@ -6,7 +6,7 @@ const CartItem = ({price, key, title}) => {
         <div className="cart-item">
             <span>{title}</span>
             <div className="cart-item-price">
-<span>{price}$</span>
+                <span>{price}$</span>
             </div>
         </div>
     );
