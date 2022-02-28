@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Home.css"
 import GameItem from "../../components/GameItem/GameItem";
+import {Link} from "react-router-dom";
 
 const Home = () => {
 
@@ -92,8 +93,10 @@ const Home = () => {
 
     return (
         <div className="home-page">
+
             {GAMES.map((game)=>
-                <GameItem game={game} key={game.id}/>
+                <GameItem game={game} key={game.id} />
+
             )}
         </div>
     );
